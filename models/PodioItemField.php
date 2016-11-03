@@ -607,23 +607,6 @@ class PodioDateItemField extends PodioItemField {
 }
 
 /**
- * phone field
- */
-class PodioPhoneItemField extends PodioPhoneOrEmailItemField
-{
-
-}
-
-
-/**
- * email field
- */
-class PodioEmailItemField extends PodioPhoneOrEmailItemField
-{
-
-}
-
-/**
  * phone ore email field
  */
 abstract class PodioPhoneOrEmailItemField extends PodioItemField
@@ -646,6 +629,23 @@ abstract class PodioPhoneOrEmailItemField extends PodioItemField
   {
     return $this->values ? $this->values : array();
   }
+}
+
+/**
+ * phone field
+ */
+class PodioPhoneItemField extends PodioPhoneOrEmailItemField
+{
+
+}
+
+
+/**
+ * email field
+ */
+class PodioEmailItemField extends PodioPhoneOrEmailItemField
+{
+
 }
 
 /**
